@@ -1,4 +1,5 @@
-import java.awt.*;
+package ShapeFactory;
+
 import java.util.Objects;
 
 public class ShapeFactory {
@@ -10,8 +11,8 @@ public class ShapeFactory {
         return instance;
     }
     public Shape getShape (String name) {
-        if(Objects.equals(name, "Circle")) return new Circle();
-        else if(Objects.equals(name, "Triangle")) return new Triangle();
+        if(Objects.equals(name, "ShapeFactory.Circle")) return new Circle();
+        else if(Objects.equals(name, "ShapeFactory.Triangle")) return new Triangle();
         else return null;
     }
 }
